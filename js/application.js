@@ -56,12 +56,12 @@ var App;
 
     $routes.when('/home',{
       controller : 'IndexCtrl',
-      templateUrl : './pages/index.html'
+      templateUrl : '/angularjs/AngularJS-SEO/pages/index.html'
     });
 
     $routes.when('/videos',{
       controller : 'VideosCtrl',
-      templateUrl : './pages/videos.html',
+      templateUrl : '/angularjs/AngularJS-SEO/pages/videos.html',
       resolve : {
         slow : function() {
           return false;
@@ -82,6 +82,8 @@ var App;
     $routes.otherwise({
       redirectTo : '/home'
     });
+
+    // $location.html5Mode(true);
 
   }]);
 
